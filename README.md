@@ -1,6 +1,10 @@
 I had only worked with AKS on Azure, the Kubernetes Ingress Controller creates a load balancer by itself, so I didn't need to create one, and the auto scaling of VMs is also managed by AKS.
 the time it took me to perform the POC was because I had to learn and do everything, I didn't have any ready-made templates on my machine, terraform that I could consult, etc. It was trial and error until I got it to work
 
+## terraform variables
+
+I didn't put any description in the variables, and their names aren't good either, I know good clean code practices, etc. From when it was backend. I didn't do this due to lack of time, it was in the tasks I wrote down to do, but I didn't have time, but on a daily basis I don't do it like that
+
 ## what would change in productive environments?
 
 there would be several environments within the environments folder, each with its own configurations, and within the modules, we could use count, to create a feature flag for each resource in each environment, thus making it possible to create things in one environment, and not create them in another, even if the two environments call the same module.
