@@ -1,0 +1,4 @@
+.env
+environments/production/.terraform
+environments/production/.terraform.lock*
+environments/production/terraform*
